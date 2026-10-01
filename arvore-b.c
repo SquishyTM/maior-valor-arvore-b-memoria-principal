@@ -191,9 +191,6 @@ void particiona(TNo *P, int d, int pos, int chave, TNo *pt) {
 
 int maior(TNo *raiz) {
 
-    int i;
-    i = 0;
-
     imprime_no(raiz);
 
     if (raiz->p[0] == NULL){
