@@ -190,8 +190,17 @@ void particiona(TNo *P, int d, int pos, int chave, TNo *pt) {
 }
 
 int maior(TNo *raiz) {
-    //TODO: Implementar essa funcao
-    return -1;
+
+    int i;
+    i = 0;
+
+    imprime_no(raiz);
+
+    if (raiz->p[0] == NULL){
+        return raiz->s[raiz->m-1];
+    } else {
+        return maior(raiz->p[raiz->m]);
+    }
 }
 
 int main(int argc, char *argv[]) {
